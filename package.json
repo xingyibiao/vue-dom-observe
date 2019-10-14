@@ -1,0 +1,27 @@
+{
+  "name": "vue-dom-observe",
+  "version": "1.0.0",
+  "description": "a directive when dom size change with vue.js",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "rollup --config",
+    "test": "test"
+  },
+  "keywords": [
+    "vue",
+    "dom",
+    "observe"
+  ],
+  "author": "xingyibiao",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.23.1",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.4",
+    "vue": "^2.6.10"
+  },
+  "dependencies": {
+    "resize-observer-polyfill": "^1.5.1"
+  }
+}
