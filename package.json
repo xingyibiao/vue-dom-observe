@@ -2,9 +2,12 @@
   "name": "vue-dom-observe",
   "version": "1.0.0",
   "description": "a directive when dom size change with vue.js",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "scripts": {
-    "build": "rollup --config",
+    "build": "npx npm-run-all build:umd build:esm",
+    "build:umd": "rollup --config ./build/rollup.base.js",
+    "build:esm": "rollup --config ./build/rollup.esm.js",
     "test": "test"
   },
   "repository": "https://github.com/xingyibiao/vue-dom-observe.git",
@@ -16,6 +19,7 @@
   "author": "xingyibiao",
   "license": "MIT",
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "rollup": "^1.23.1",
     "rollup-plugin-typescript2": "^0.24.3",
     "tslib": "^1.10.0",
