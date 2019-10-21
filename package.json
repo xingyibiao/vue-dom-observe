@@ -1,6 +1,6 @@
 {
   "name": "vue-dom-observe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a directive when dom size change with vue.js",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
